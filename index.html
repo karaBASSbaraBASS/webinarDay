@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <!--- Basic Page Needs  -->
     <meta charset="utf-8">
-    <title>Event4 - Responsive Marketing Landing Pages</title>
+    <title>Бизнес школа игротренеров - Cash Flow под ключ</title>
     <meta name="description" content="Responsive Marketing Landing Pages">
     <meta name="author" content="">
     <meta name="keywords" content="">
@@ -24,11 +24,11 @@
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <!-- favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+    <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 </head>
@@ -587,7 +587,7 @@
         <h2>Зарегистрироватся на курс</h2>
         <span class="btm-bar"></span>
         <div class="col-md-10 ntSubTitle block-center">После того как форма будет доставлена, наши менеджеры обязательно с вами свяжутся.</div>
-        <form action="php/form.php" method="post" id="registerForm">
+        <form action="./php/mailOrder.php" method="post" id="registerForm">
             <div class="row">
                 <div class="col-md-6"><input type="text" name="reg_name" placeholder="Имя" required/></div>
                 <div class="col-md-6"><input type="text" name="reg_secName" placeholder="Фамилия" required/></div>
@@ -596,7 +596,7 @@
                 <div class="col-md-6"><input type="tel" name="reg_contact" placeholder="Номер телефона" required></div>
                 <!-- <div class="col-md-6"><input type="number" name="reg_quantity" placeholder="Quantity" required/></div> -->
                 <div class="col-md-12 arrow">
-                    <select name="reg_attend" required>
+                    <select name="reg_price" required>
                         <option disabled selected value="">Актуальный пакет услуг</option>
                         <option value="standart">Стандарт</option>
                         <option value="upper">Продвинутый</option>
@@ -634,7 +634,7 @@
     <div class="ntSubscribe">
         <div class="form">
             <img src="images/curve-left.svg" class="ntSubscribeLeft" alt="curve-left" />
-            <form action="#" method="post">
+            <form action="./php/mailOrder.php" method="post">
                 <input type="email" name="email" value="Введите ваш Email" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;"/>
                 <button type="submit">подписатся</button>
             </form>
